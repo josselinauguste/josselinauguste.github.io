@@ -1,15 +1,14 @@
-@import url(https://raw.githubusercontent.com/be5invis/Iosevka/master/webfont-csses/iosevka.css);
 body {
   background-color: white;
   color: #555;
-  font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.57;
   margin: 0;
   padding: 0;
 }
 
 code {
-  font-family: "Iosevka", Menlo, monospace;
+  font-family: Menlo, monospace;
   font-feature-settings: "calt" 1;
   line-height: 1.4em;
 }
@@ -94,17 +93,29 @@ main {
   margin-top: 40px;
 }
 
+@media only screen 
+and (device-width : 375px) {
+  h1, p.title {
+    font-size: 2em;
+  }
+
+  main {
+    margin-top: 0;
+  }
+}
+
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 300;
-  margin: 16px 0;
+  margin: 26px 0 16px 0;
 }
 
 .metadata {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 300;
-  margin: 12px 0;
+  margin: -10px 0 20px 0;
+  text-transform: uppercase;
 }
 
 article {
@@ -137,6 +148,7 @@ nav {
 }
 
 .container>footer {
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.75em;
   font-weight: 300;
   margin: 16px 0 0 0;
@@ -148,10 +160,11 @@ nav {
 
 article h1 {
   font-size: 2em;
+  margin: 16px 0;
 }
 
-article section>p {
-  font-size: 1.1em;
+article section>p, article section>ul, article>div {
+  font-size: 1.2em;
 }
 
 article p>img {
