@@ -20,9 +20,8 @@ type: article
         <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
       </h1>
       <p class="metadata">
-        Posted on
         <time datetime="{{ page.date | date_to_xmlschema }}">
-          {{ page.date | date: "%b %e, %Y" }}
+          {{ page.date | date: "%B %e, %Y" }}
         </time>
       </p>
     </header>

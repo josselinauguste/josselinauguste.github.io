@@ -20,9 +20,8 @@ layout: default
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h2>
         <p class="metadata">
-          Posted on
           <time datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%b %e, %Y" }}
+            {{ post.date | date: "%B %e, %Y" }}
           </time>
         </p>
       </header>
