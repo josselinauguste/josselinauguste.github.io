@@ -1,0 +1,35 @@
+---
+layout: default
+type: article
+---
+
+<header>
+  <p class="title">
+    <a href="{{ site.url }}">
+      {{ site.page_title }}
+    </a>
+  </p>
+  <p class="subtitle">
+    {{ site.page_subtitle }}
+  </p>
+</header>
+<main>
+  <article>
+    <header>
+      <h1>
+        <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+      </h1>
+      <p class="metadata">
+        Posted on
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%b %e, %Y" }}
+        </time>
+      </p>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+    </footer>
+  </article>
+</main>

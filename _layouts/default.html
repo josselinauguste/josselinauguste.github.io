@@ -1,0 +1,41 @@
+{% capture title %}
+{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+{% endcapture %}
+{% capture description %}
+{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}
+{% endcapture %}
+<html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+  <title>{{ title }}</title>
+  <meta property="og:title" content="{{ title }}">
+  <meta name="twitter:title" content="{{ title }}">  
+  <meta name="description" content="{{ description }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta name="twitter:description" content="{{ description | truncate: 200 }}"> 
+  <meta name="author" content="{{ site.author }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:card" content="summary"> 
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">    
+  <meta property="og:type" content="{% if page.layout == "post" %}article{% else %}website{% endif %}">
+  <meta name="generator" content="Jekyll">
+  {% feed_meta %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="{{ site.url }}/css/screen.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    {{ content }}
+    <footer>
+      {% include links.html %}
+      <p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" class="license-text"><a rel="cc:attributionURL" href="https://www.iblop.net"><span rel="dct:title">This website</span></a> by myself is licensed under <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0 <img style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.png"><img  style="height:22px!important;margin-left: 3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.png"></a></p>
+    </footer>
+  </div>
+</body>
+</html>

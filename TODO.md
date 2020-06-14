@@ -1,0 +1,2 @@
+- add posts pagination
+- add newer / older navigation below post
