@@ -1,14 +1,18 @@
 body {
   background-color: white;
   color: #555;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
+h1, p.title, h2 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
 code {
-  font-family: Menlo, monospace;
+  font-family: monospace;
   font-feature-settings: "calt" 1;
   line-height: 1.4em;
 }
@@ -106,10 +110,6 @@ h2 {
   font-size: 1.5em;
   font-weight: 300;
   margin: 26px 0 16px 0;
-}
-
-article > header > h1, h2 {
-  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 .metadata {
