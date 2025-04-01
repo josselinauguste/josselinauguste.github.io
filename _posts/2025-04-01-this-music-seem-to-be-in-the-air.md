@@ -4,7 +4,7 @@ title: "This music seems to be in the air..."
 date: 2025-04-01T22:34:58+02:00
 ---
 
-Today is April ~~F~~Cools' Day, and I too want to be part of the [April Cools Club](https://www.aprilcools.club/), so I digressed a little bit and baked something I wanted to do for a long time, a [nice little playlist of awesome tunes](https://music.apple.com/fr/playlist/socially-conscious/pl.u-KVXBBjWCjRdNM), all sharing a common thread. These seem to be more actual than they ever been.
+Today is April ~~F~~Cools' Day, and I too want to be part of the [April Cools Club](https://www.aprilcools.club/), so I digressed a little bit and baked something I wanted to do for a long time, curate a [nice little playlist of awesome tunes](https://music.apple.com/fr/playlist/socially-conscious/pl.u-KVXBBjWCjRdNM), all sharing a common thread. Sadly, these seem to be more actual than they have ever been.
 
 Here are the gems:
 - _Spiritual Trilogy / Oh Freedom / Come and Go with Me / I'm on My Way_ - Odetta
